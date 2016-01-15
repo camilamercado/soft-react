@@ -2,7 +2,6 @@ var React = require('react');
 var Main = require('../components/Main');
 var Home = require('../components/Home');
 var Profile = require('../components/Profile');
-//var NotesList = require('../components/Notes/NotesList');
 var Router = require('react-router');
 var Route = Router.Route;
 var IndexRoute = Router.IndexRoute;
@@ -13,3 +12,4 @@ module.exports = (
     <IndexRoute component={Home} />
   </Route>
 );
+

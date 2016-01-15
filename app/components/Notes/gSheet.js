@@ -5,16 +5,15 @@ var AddNote = require('./AddNote');
 var Google = React.createClass({
 	propTypes: {
 		username: React.PropTypes.string.isRequired,
-		sheetName: React.PropTypes.string.isRequired,
 		gdata: React.PropTypes.array.isRequired,
 		addNote: React.PropTypes.func.isRequired,
 	},
 	render: function(){
 			return (
 			<div> 	
-				<h3> Google Sheet data for {this.props.sheetName} </h3>
+				<h3> Google Sheet data for {this.props.username} </h3>
 				<GList 
-				fieldValues={this.props.fieldValues}
+				yardageData={this.props.yardageData}
 				saveValues={this.props.saveValues}
 				gdata={this.props.gdata}
 				addNote={this.props.addNote}
